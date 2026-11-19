@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Reference Tool</title>
+<meta name="description" content="Design Reference Tool is a personal app for collecting and organizing visual references for illustration work.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./">Design Reference Tool</a>
+    <nav>
+      <a href="./" aria-current="page">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <span class="badge">Currently in development</span>
+  <h1>Design Reference Tool</h1>
+  <p class="lead">A personal tool for collecting, rating and organizing visual references for illustration work, such as costume and accessory designs for characters.</p>
+
+  <div class="card meta">
+    <strong>Developer:</strong> Tatsuya Ishihara<br>
+    <strong>Contact:</strong> <a href="mailto:curry-and-rice@live.jp">curry-and-rice@live.jp</a><br>
+    <strong>Status:</strong> In development (not publicly released)<br>
+    <strong>Intended users:</strong> The developer only (personal use)
+  </div>
+
+  <h2>What it does</h2>
+  <p>When designing outfits for illustrations, I save many reference images on Pinterest. Design Reference Tool helps me review those references efficiently and keep track of which ones are useful.</p>
+  <ul>
+    <li><strong>Browse my own Pinterest boards.</strong> After I connect my Pinterest account, the app loads the boards and Pins I have saved and shows them in an image grid.</li>
+    <li><strong>Search my saved Pins.</strong> Find Pins on my own boards by keyword.</li>
+    <li><strong>Rate and organize.</strong> Give each reference a 1&ndash;5 star rating, mark favorites, hide images I don't need (and restore them later), write comments, and classify references by theme and by clothing part (tops, skirts, shoes, hair accessories, etc.).</li>
+    <li><strong>Better search suggestions.</strong> Based only on my own ratings and tags, the app suggests search keywords that I can use the next time I look for references on Pinterest myself.</li>
+    <li><strong>Open the original Pin.</strong> Every reference links back to its Pin on Pinterest.</li>
+  </ul>
+
+  <h2>How it uses the Pinterest API</h2>
+  <ul>
+    <li>Connects to my account with Pinterest&rsquo;s official OAuth authorization. The app never asks for or stores my Pinterest password.</li>
+    <li>Uses read-only access to my account information, boards and Pins (<code>user_accounts:read</code>, <code>boards:read</code>, <code>pins:read</code>). It does not create, edit or delete anything on Pinterest.</li>
+    <li>Pin images and details are loaded from the API each time they are displayed and are not saved by the app. Only Pin IDs and board IDs are stored, so that my own ratings and comments can be linked to the right Pin.</li>
+    <li>Pinterest content is not used to train or develop any AI or machine learning model, and is not sent to any external service.</li>
+    <li>The app does not scrape Pinterest or perform any automated actions on Pinterest.</li>
+  </ul>
+
+  <h2>How it runs</h2>
+  <p>Design Reference Tool is a local web application that runs on my own Windows PC. All data stays on that computer; there is no server operated by the developer that stores user data. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+  <div class="note">Design Reference Tool is an independent project and is not affiliated with, endorsed by, or sponsored by Pinterest, Inc. Pinterest is a trademark of Pinterest, Inc.</div>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Tatsuya Ishihara &middot; <a href="privacy.html">Privacy Policy</a></div>
+</footer>
+</body>
+</html>

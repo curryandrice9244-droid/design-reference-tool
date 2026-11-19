@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Design Reference Tool</title>
+<meta name="description" content="Privacy Policy for Design Reference Tool.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./">Design Reference Tool</a>
+    <nav>
+      <a href="./">About</a>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: November 19, 2026<br>Developer: Tatsuya Ishihara</p>
+
+  <p>This Privacy Policy explains how Design Reference Tool (&ldquo;the app&rdquo;) handles information, including information obtained through the Pinterest API. The app is a personal tool that is currently in development and is used only by its developer.</p>
+
+  <h2>1. Summary</h2>
+  <ul>
+    <li>The app runs locally on the user&rsquo;s own Windows PC. All data is stored only on that computer.</li>
+    <li>The developer does not operate any server that collects or stores user data.</li>
+    <li>Pin images, image URLs and source URLs are not saved by the app. Only Pin IDs and board IDs are stored, together with the user&rsquo;s own ratings and comments.</li>
+    <li>No information is sold or shared with third parties.</li>
+    <li>Pinterest content is not used to train or develop any AI or machine learning model.</li>
+  </ul>
+
+  <h2>2. Information obtained through the Pinterest API</h2>
+  <p>With the user&rsquo;s permission, given through Pinterest&rsquo;s official OAuth authorization, the app uses read-only access (<code>user_accounts:read</code>, <code>boards:read</code>, <code>pins:read</code>) to obtain:</p>
+  <ul>
+    <li>Basic account information, such as the username, to show which account is connected;</li>
+    <li>The user&rsquo;s own boards (board ID, name);</li>
+    <li>Pins saved on those boards (Pin ID, image URL, title, description, and the link to the original source website).</li>
+  </ul>
+  <p>The app never asks for or stores the user&rsquo;s Pinterest password.</p>
+
+  <h3>How image URLs, Pin IDs and source URLs are handled</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Information</th><th>Handling</th></tr></thead>
+    <tbody>
+      <tr><td>Pin ID, board ID</td><td>Stored locally, only to link the user&rsquo;s ratings, comments and classifications to the correct Pin and board, and to open the Pin on Pinterest.</td></tr>
+      <tr><td>Images and image URLs</td><td>Not saved by the app. They are requested from the Pinterest API each time they are displayed. The web browser may keep a temporary cache as part of its normal operation.</td></tr>
+      <tr><td>Source URLs (links to the original website)</td><td>Not saved by the app. They are requested from the Pinterest API when needed and are only used to let the user open the original source.</td></tr>
+      <tr><td>Titles, descriptions, account information</td><td>Not saved by the app. Used only for display at the time they are requested.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>3. Information entered by the user</h2>
+  <p>The app stores the following information that the user enters:</p>
+  <ul>
+    <li>Star ratings (1&ndash;5), favorites, and hidden/restored status;</li>
+    <li>Comments and ratings on specific parts of an image;</li>
+    <li>Classifications and tags, such as theme, clothing part, color, shape, material, pattern and decoration;</li>
+    <li>Project and theme settings, and search keyword history.</li>
+  </ul>
+  <p>This information is used only to organize references and to suggest search keywords to the user. Keyword suggestions are based solely on the user&rsquo;s own ratings and tags. Any AI processing used for these features runs locally on the user&rsquo;s PC, and no Pinterest content is sent to external AI services.</p>
+
+  <h2>4. Access token</h2>
+  <p>The OAuth access token issued by Pinterest is stored in the Windows Credential Manager on the user&rsquo;s PC. It is used only to communicate with the Pinterest API and is not sent anywhere else.</p>
+
+  <h2>5. Where data is stored and for how long</h2>
+  <ul>
+    <li><strong>Location:</strong> A local database (SQLite) on the user&rsquo;s own Windows PC, and the Windows Credential Manager for the access token. No data is stored on servers operated by the developer.</li>
+    <li><strong>Retention:</strong> Stored data is kept until the user deletes it. When the user disconnects their Pinterest account, the access token is deleted.</li>
+  </ul>
+
+  <h2>6. Sharing with third parties</h2>
+  <p>The app does not sell, rent or share any information with third parties. Information obtained through the Pinterest API is used only to provide the app&rsquo;s features to the user. The app contains no advertising or analytics services.</p>
+
+  <h2>7. How to delete information</h2>
+  <ul>
+    <li><strong>Ratings and comments:</strong> Can be deleted individually or all at once within the app.</li>
+    <li><strong>Pinterest connection:</strong> Disconnecting the account in the app deletes the stored access token. Access can also be revoked at any time from the connected apps section of the user&rsquo;s Pinterest account settings.</li>
+    <li><strong>All data:</strong> Deleting the app&rsquo;s data folder removes all locally stored information.</li>
+    <li>Requests or questions about deletion can also be sent to the contact address below.</li>
+  </ul>
+
+  <h2>8. This website</h2>
+  <p>This website does not use cookies, analytics or tracking. It is hosted on GitHub Pages, and GitHub may collect technical information such as IP addresses in accordance with the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+
+  <h2>9. Children</h2>
+  <p>The app is not intended for children under the age of 13.</p>
+
+  <h2>10. Relationship with Pinterest</h2>
+  <p>Design Reference Tool is an independent project. It is not affiliated with, endorsed by, or sponsored by Pinterest, Inc. Pinterest is a trademark of Pinterest, Inc. The app accesses Pinterest only through the official Pinterest API and follows the Pinterest <a href="https://policy.pinterest.com/en/developer-guidelines">Developer Guidelines</a>. Use of Pinterest itself is subject to Pinterest&rsquo;s own <a href="https://policy.pinterest.com/en/terms-of-service">Terms of Service</a> and <a href="https://policy.pinterest.com/en/privacy-policy">Privacy Policy</a>.</p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>This policy may be updated as the app is developed. Changes will be posted on this page with a new effective date.</p>
+
+  <h2>12. Contact</h2>
+  <p>Tatsuya Ishihara<br>Email: <a href="mailto:curry-and-rice@live.jp">curry-and-rice@live.jp</a></p>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Tatsuya Ishihara &middot; <a href="./">About</a></div>
+</footer>
+</body>
+</html>
