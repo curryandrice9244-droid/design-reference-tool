@@ -43,7 +43,7 @@
   <h2>How it uses the Pinterest API</h2>
   <ul>
     <li>Connects to my account with Pinterest&rsquo;s official OAuth authorization. The app never asks for or stores my Pinterest password.</li>
-    <li>Uses read-only access to my account information, boards and Pins (<code>user_accounts:read</code>, <code>boards:read</code>, <code>pins:read</code>). It does not create, edit or delete anything on Pinterest.</li>
+    <li>Uses read-only access to my account information, boards and Pins, including my own secret boards (<code>user_accounts:read</code>, <code>boards:read</code>, <code>pins:read</code>, <code>boards:read_secret</code>, <code>pins:read_secret</code>), so that I can browse and search my own saved Pins. It does not create, edit or delete anything on Pinterest.</li>
     <li>Pin images and details are loaded from the API each time they are displayed and are not saved by the app. Only Pin IDs and board IDs are stored, so that my own ratings and comments can be linked to the right Pin.</li>
     <li>Pinterest content is not used to train or develop any AI or machine learning model, and is not sent to any external service.</li>
     <li>The app does not scrape Pinterest or perform any automated actions on Pinterest.</li>

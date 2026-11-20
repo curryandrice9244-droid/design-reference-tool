@@ -20,7 +20,7 @@
 
 <main class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: November 19, 2026<br>Developer: Tatsuya Ishihara</p>
+  <p class="meta">Effective date: November 19, 2026 (last updated: November 20, 2026)<br>Developer: Tatsuya Ishihara</p>
 
   <p>This Privacy Policy explains how Design Reference Tool (&ldquo;the app&rdquo;) handles information, including information obtained through the Pinterest API. The app is a personal tool that is currently in development and is used only by its developer.</p>
 
@@ -34,12 +34,14 @@
   </ul>
 
   <h2>2. Information obtained through the Pinterest API</h2>
-  <p>With the user&rsquo;s permission, given through Pinterest&rsquo;s official OAuth authorization, the app uses read-only access (<code>user_accounts:read</code>, <code>boards:read</code>, <code>pins:read</code>) to obtain:</p>
+  <p>With the user&rsquo;s permission, given through Pinterest&rsquo;s official OAuth authorization, the app uses read-only access (<code>user_accounts:read</code>, <code>boards:read</code>, <code>pins:read</code>, <code>boards:read_secret</code>, <code>pins:read_secret</code>) to obtain:</p>
   <ul>
     <li>Basic account information, such as the username, to show which account is connected;</li>
-    <li>The user&rsquo;s own boards (board ID, name);</li>
-    <li>Pins saved on those boards (Pin ID, image URL, title, description, and the link to the original source website).</li>
+    <li>The user&rsquo;s own boards, including the user&rsquo;s own secret boards (board ID, name);</li>
+    <li>Pins saved on those boards (Pin ID, image URL, title, description, and the link to the original source website);</li>
+    <li>Search results within the user&rsquo;s own saved Pins, when the user searches them by keyword.</li>
   </ul>
+  <p>The secret-board permissions are used only so that the user can view and search their own saved Pins, including Pins on their own secret boards, inside the app on their own computer. Secret boards and their Pins are never shown to anyone else.</p>
   <p>The app never asks for or stores the user&rsquo;s Pinterest password.</p>
 
   <h3>How image URLs, Pin IDs and source URLs are handled</h3>
